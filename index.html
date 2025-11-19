@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Rock Paper Scissors - Hoor's Game</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="app">
+        <h1>Rock · Paper · Scissors</h1>
+        <p class="subtitle">Play against the computer 🎮</p>
+
+        <div class="score-board">
+            <div class="score">
+                <span>You</span>
+                <strong id="player-score">0</strong>
+            </div>
+            <div class="score">
+                <span>Computer</span>
+                <strong id="computer-score">0</strong>
+            </div>
+        </div>
+
+        <div class="choices">
+            <button class="choice" data-choice="rock">
+                <span class="emoji">🪨</span>
+                <span class="label">Rock</span>
+            </button>
+            <button class="choice" data-choice="paper">
+                <span class="emoji">📄</span>
+                <span class="label">Paper</span>
+            </button>
+            <button class="choice" data-choice="scissors">
+                <span class="emoji">✂️</span>
+                <span class="label">Scissors</span>
+            </button>
+        </div>
+
+        <div class="results">
+            <p id="status">Make your move 👇</p>
+            <p id="detail"></p>
+        </div>
+
+        <button id="reset-btn" class="reset-btn">Reset Game</button>
+
+        <footer>
+            Made with 💜 by Eng.Hoor
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
